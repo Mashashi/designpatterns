@@ -6,12 +6,16 @@ using System.Threading.Tasks;
 
 namespace Commands
 {
+
     abstract class Console
     {
+
         public abstract String getRoot();
+
         public void printStatus() {
             System.Console.WriteLine(getRoot() + ">");
         }
+
     }
 
     class Cmd : Console{
